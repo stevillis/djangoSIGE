@@ -9,15 +9,15 @@ Django==3.1.13
 django-heroku==0.3.1
 eight==0.4.2
 future==0.16.0
-Geraldo @ https://github.com/thiagopena/geraldo/archive/master.zip
 gunicorn==20.1.0
+https://github.com/thiagopena/geraldo/archive/master.zip
+https://github.com/thiagopena/PySIGNFe/archive/master.zip
 lxml==4.2.6
 Pillow==8.4.0
-psycopg2==2.9.2
-psycopg2-binary==2.9.2
+psycopg2==2.8.6
+psycopg2-binary==2.8.6
 pycparser==2.21
 pyOpenSSL==17.5.0
-PySIGNFe @ https://github.com/thiagopena/PySIGNFe/archive/master.zip
 python-decouple==3.1
 pytz==2018.3
 reportlab==3.4.0
