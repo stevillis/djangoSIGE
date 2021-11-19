@@ -1,4 +1,4 @@
-# import django_heroku
+import django_heroku
 import os
 from decouple import config, Csv
 from dj_database_url import parse as dburl
@@ -6,6 +6,7 @@ from .configs import DEFAULT_DATABASE_URL, DEFAULT_FROM_EMAIL, EMAIL_HOST, EMAIL
 
 APP_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 PROJECT_ROOT = os.path.abspath(os.path.dirname(APP_ROOT))
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -126,7 +127,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(APP_ROOT, 'staticfiles')
+# STATIC_ROOT = os.path.join(APP_ROOT, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIRS = [
     os.path.join(APP_ROOT, 'static'),
@@ -149,4 +151,4 @@ LOGIN_NOT_REQUIRED = (
 )
 
 # Activate Django-Heroku.
-#django_heroku.settings(locals())
+django_heroku.settings(locals())
