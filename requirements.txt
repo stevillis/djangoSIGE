@@ -10,4 +10,5 @@ cryptography>=2.3
 lxml==4.2.*
 pyOpenSSL==17.5.*
 signxml==2.5.*
+django-on-heroku==1.1.2
 gunicorn==20.1.0
