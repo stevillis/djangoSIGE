@@ -1,3 +1,4 @@
+import django_heroku
 import os
 from decouple import config, Csv
 from dj_database_url import parse as dburl
@@ -145,3 +146,6 @@ LOGIN_NOT_REQUIRED = (
     r'/login/trocarsenha/',
     r'/logout/',
 )
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
